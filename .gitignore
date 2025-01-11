@@ -71,3 +71,8 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Elastic-Volcano/.vscode
+Elastic-Volcano/Temp
+Elastic-Volcano/Logs
+Elastic-Volcano/Library
+Elastic-Volcano/UserSettings
