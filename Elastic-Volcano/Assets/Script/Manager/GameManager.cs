@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator WinGame()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.3f);
         UIManager.Instance.OpenUI<Success>();
         Time.timeScale = 0;
     }

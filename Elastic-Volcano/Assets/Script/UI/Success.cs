@@ -56,6 +56,8 @@ public class Success : CanvasUI
         else
         {
             SceneManager.LoadScene("Home");
+            UIManager.Instance.CloseAll();
+            UIManager.Instance.OpenUI<ChooseLV>();
         }
     }
 
