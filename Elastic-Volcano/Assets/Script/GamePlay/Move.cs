@@ -10,7 +10,7 @@ public class Move : MonoBehaviour
     public float detectionRadius = 0.7f; // Bán kính phát hiện đối tượng "Screw"
     public GameObject effect;
     public GameManager _gameManager;
-    public LayerMask snailLayer; 
+    public LayerMask pinLayer; 
     public Line_checker lineChecker;
     public bool isMoving = false;
     [SerializeField] private bool varLine = false;
@@ -36,7 +36,7 @@ public class Move : MonoBehaviour
         if (!isMoving)
         {
             // Kiểm tra xem có đối tượng "Screw" trong phạm vi phát hiện không
-            Collider2D[] snails = Physics2D.OverlapCircleAll(transform.position, detectionRadius,snailLayer);
+            Collider2D[] snails = Physics2D.OverlapCircleAll(transform.position, detectionRadius,pinLayer);
 
             if (snails.Length == 0)
             {
@@ -74,7 +74,7 @@ public class Move : MonoBehaviour
                 {
                     // Dừng lại khi đến nơi
                     isMoving = false;
-                    SoundManager.Instance.PlayVFXSound(1);
+                    SoundManager.Instance.PlayVFXSound(0);
                     StartCoroutine(DeactivateParentAfterDelay(0.2f));
                 }
             }
@@ -94,9 +94,6 @@ public class Move : MonoBehaviour
 
     }
 
-
-
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (IsIntersectingLine(other))
@@ -106,7 +103,7 @@ public class Move : MonoBehaviour
             {
                 _gameManager.hp -= 1;
                 hasCollided = true;
-                SoundManager.Instance.PlayVFXSound(0);
+                SoundManager.Instance.PlayVFXSound(1);
             }
 
         }

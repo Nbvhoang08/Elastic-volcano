@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5733123266248985523}
   - component: {fileID: 7270802393942544467}
   - component: {fileID: 970003223324653316}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2077190467
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 39
   m_Sprite: {fileID: 21300000, guid: 9fb966a3e0aa18e4b9c15d4546f8c737, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRotating: 1
   pinOther: {fileID: 0}
-  rotationSpeed: 120
+  rotationSpeed: 720
   detectionRadius: 0.5
   playerLayer:
     serializedVersion: 2
@@ -237,7 +237,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5410928202519727067}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -264,7 +264,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.19
+  m_Radius: 0.28
 --- !u!114 &4902204611984568928
 MonoBehaviour:
   m_ObjectHideFlags: 0

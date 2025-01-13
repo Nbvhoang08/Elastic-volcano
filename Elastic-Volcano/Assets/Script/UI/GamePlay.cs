@@ -57,7 +57,7 @@ public class GamePlay : CanvasUI
     }
     IEnumerator ReLoad()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
         ReloadCurrentScene();
     }
     public void ReloadCurrentScene()

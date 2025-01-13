@@ -15,7 +15,7 @@ public class UIManager : Singleton<UIManager>
     }
     void Start()
     {
-        //OpenUI<ChooseLevel>();
+        OpenUI<ChooseLV>();
     }
     // Khởi tạo tất cả UI Canvas, đặt chúng ở trạng thái không hoạt động
     private void InitializeUICanvases()

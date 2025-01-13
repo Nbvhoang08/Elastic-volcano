@@ -41,22 +41,22 @@ public class LavaLine : MonoBehaviour
             boxCollider.offset = offset;
         }
     }
-    void OnDrawGizmos()
-    {
-        Vector3 positionA = new Vector3(pointA.position.x, pointA.position.y, 0);
-        Vector3 positionB = new Vector3(pointB.position.x, pointB.position.y, 0);
+    // void OnDrawGizmos()
+    // {
+    //     Vector3 positionA = new Vector3(pointA.position.x, pointA.position.y, 0);
+    //     Vector3 positionB = new Vector3(pointB.position.x, pointB.position.y, 0);
 
-        // Đặt vị trí cho Line Renderer
-        lineRenderer.SetPosition(0, positionA);
-        lineRenderer.SetPosition(1, positionB);
-        if (spriteRenderer != null)
-        {
-            Vector3 spritePosition = spriteRenderer.transform.position;
-            Handles.Label(spritePosition, $"Order: {spriteRenderer.sortingOrder}", new GUIStyle
-            {
-                fontSize = 24,
-                normal = new GUIStyleState { textColor = Color.white }
-            });
-        }
-    }
+    //     // Đặt vị trí cho Line Renderer
+    //     lineRenderer.SetPosition(0, positionA);
+    //     lineRenderer.SetPosition(1, positionB);
+    //     if (spriteRenderer != null)
+    //     {
+    //         Vector3 spritePosition = spriteRenderer.transform.position;
+    //         Handles.Label(spritePosition, $"Order: {spriteRenderer.sortingOrder}", new GUIStyle
+    //         {
+    //             fontSize = 24,
+    //             normal = new GUIStyleState { textColor = Color.white }
+    //         });
+    //     }
+    // }
 }
